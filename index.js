@@ -22,7 +22,7 @@ app.get('/sendOtp', async (req, res) => {
 
     sendSmtpEmail.subject = "Your OTP Code";
     sendSmtpEmail.htmlContent = `<p>Your OTP is: <strong>${otp}</strong></p>`;
-    sendSmtpEmail.sender = { name: "YourApp", email: "yourapp@example.com" };
+    sendSmtpEmail.sender = { name: "YourApp", email: "vspcramagundam@gmail.com" };
     sendSmtpEmail.to = [{ email: email }];
 
     try {
